@@ -1,0 +1,15 @@
+python -m venv venv
+venv\Scripts\activate
+pip install django
+pip install django-allauth
+python.exe -m pip install --upgrade pip
+django-admin startproject projeto_votacao .
+python .\manage.py migrate
+python .\manage.py createsuperuser 
+douglas 123
+http://127.0.0.1:8000/admin
+https://django-allauth.readthedocs.io/en/latest/providers.html
+https://console.developers.google.com/
+id  331317300250-bl1h6qeq0blc0s2nc2srg8lf4v5e4099.apps.googleusercontent.com
+chave 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
+pip install python-decouple
