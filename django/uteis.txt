@@ -23,4 +23,17 @@ Crie um usuário (Administrador do sistema)
 python .\manage.py createsuperuser 
 
 
+urls
+http://127.0.0.1:8000/
+http://127.0.0.1:8000/accounts/login/
+http://127.0.0.1:8000/accounts/logout/
+http://127.0.0.1:8000/accounts/signup/
+http://127.0.0.1:8000/accounts/password/reset/
+http://127.0.0.1:8000/accounts/password/set/
+http://127.0.0.1:8000/accounts/email/
+http://127.0.0.1:8000/accounts/confirm-email/
+http://127.0.0.1:8000/accounts/password/reset/done/
+http://127.0.0.1:8000/accounts/password/reset/key/done/
+
+
 pip freeze > requirements.txt
