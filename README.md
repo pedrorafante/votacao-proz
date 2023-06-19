@@ -3,6 +3,26 @@ Sistema de votação para melhor grupo apresentado na matéria de Experiência d
 
 ![alt text](https://github.com/pedrorafante/votacao-proz/blob/main/img/Desenho%20inicial.jpeg?raw=true)
 
+>
+> **Note**: Montar Ambiente Django
+```console
+python --version
+```
+Instalar o Python Version 3.11.0
+ 
+```console
+ virtualenv --version
+```
+virtualenv 20.23.1 - Caso não tenha instalar 
+```console
+pip install virtualenv
+```
+
+
+```console
+pip install django
+```
+
 PASSO A PASSO 
 
 CRIAR UM AMBIENTE VIRTUAL
