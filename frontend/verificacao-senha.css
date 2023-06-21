@@ -11,8 +11,35 @@ html {
   h1{
     color: #fff;
     font-size: 25px;
+    font-family: 'Oxanium', cursive;
+    justify-content: center;
+    align-items: center;
   }
   
+h2{
+  font-family: 'Oxanium', cursive;
+  font-size: 20px;
+}
+
+fieldset{
+  border: 1px solid #ccc; 
+  border-radius: 5px; 
+  padding: 7px; 
+  width: 800px; 
+  height: 80px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20vh; /* Define a altura da div do container para ocupar toda a altura da tela */
+}
+
+label{
+  font-family: 'Oxanium', cursive;
+}
+
   .login-box {
     position: absolute;
     top: 50%;
@@ -171,9 +198,45 @@ html {
       bottom: 100%;
     }
   }
-  @media screen and (max-width: 1080px) {
+  @media screen and (max-width: 1100px) {
     h1{
       font-size: 15px;
     }
+    fieldset{
+      border: 1px solid #ccc; 
+      border-radius: 5px; 
+      padding: 7px; 
+      width: 300px; 
+      height: 60px; 
+    }
   }
-  
+  @media screen and (max-width: 1200px) and (orientation: landscape) {
+    .container {
+      align-items: flex-start; /* Alinha o contêiner ao topo da tela */
+      justify-content: flex-start;
+      height: 150vh;
+      margin-top: 30vh;
+      margin-left: 5%
+    }
+    fieldset {
+      border: 1px solid #ccc; 
+      width: 20%; 
+      height: 30vh;
+      width: 30vh;
+    }
+  }
+  @media screen and (max-width: 700px) and (orientation: landscape) {
+    .container {
+      align-items: flex-start; /* Alinha o contêiner ao topo da tela */
+      justify-content: flex-start;
+      height: 150vh;
+      margin-top: 30vh;
+      margin-left: 0%
+    }
+    fieldset {
+      border: 1px solid #ccc; 
+      width: 20%; 
+      height: 30vh;
+      width: 30vh;
+    }
+  }
