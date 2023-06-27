@@ -7,7 +7,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 SECRET_KEY = 'django-insecure-rc^*w^w&6g9_(uvx#6s*bnt!w)l0rdi%!l7mv#y%uc&x%wo5pk'
 
-DEBUG = True 
+DEBUG = True
 
 ALLOWED_HOSTS = ["*"]
 
@@ -27,7 +27,7 @@ INSTALLED_APPS = [
     'allauth.socialaccount',
     'allauth.socialaccount.providers.google',
     'votacao_app',
-    
+
 
 ]
 
@@ -42,7 +42,7 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'whitenoise.middleware.WhiteNoiseMiddleware',
-    
+
 ]
 
 ROOT_URLCONF = 'mysite.urls'
@@ -63,10 +63,10 @@ TEMPLATES = [
     },
 ]
 
-DBBACKUP_STORAGE = 'django.core.files.storage.FileSystemStorage' #o que salvar
-DBBACKUP_STORAGE_OPTIONS = {'location': 'backups/'} # onde salvar
+DBBACKUP_STORAGE = 'django.core.files.storage.FileSystemStorage'  # o que salvar
+DBBACKUP_STORAGE_OPTIONS = {'location': 'backups/'}  # onde salvar
 # pip install django-dbbackup
-#python manage.py dbbackup  
+# python manage.py dbbackup
 
 WSGI_APPLICATION = 'mysite.wsgi.application'
 
@@ -75,12 +75,12 @@ WSGI_APPLICATION = 'mysite.wsgi.application'
 
 DATABASES = {
     'default': {
-    'ENGINE': 'django.db.backends.mysql',
-    'NAME': 'railway',
-    'USER': 'root',
-    'PASSWORD': 'U64HzXAeJ3EsPe5bfaWl',
-    'HOST': 'containers-us-west-131.railway.app',
-    'PORT': '8016',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'u751391022_votacao',
+        'USER': 'u751391022_votacao',
+        'PASSWORD': 'o^P4fX2wigk',
+        'HOST': 'projetospark.com.br',
+        'PORT': '3306',
     }}
 
 AUTHENTICATION_BACKENDS = [
@@ -142,5 +142,3 @@ EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 EMAIL_HOST_USER = info.EMAIL_HOST_USER
 EMAIL_HOST_PASSWORD = info.EMAIL_HOST_PASSWORD
-
-

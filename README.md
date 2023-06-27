@@ -9,7 +9,17 @@ Sistema de votação para melhor grupo apresentado na matéria de Experiência d
 python --version
 ```
 Instalar o Python Version 3.11.0
+
+```console
+cd django
+```
  
+```console
+cd pip install -r requirements.txt
+```
+
+
+
 ```console
  virtualenv --version
 ```
