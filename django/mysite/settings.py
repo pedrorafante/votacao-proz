@@ -15,23 +15,14 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-rc^*w^w&6g9_(uvx#6s*bnt!w)l0rdi%!l7mv#y%uc&x%wo5pk'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-<<<<<<< HEAD
 DEBUG = True 
-=======
-DEBUG = True
->>>>>>> 472e17593db4b5c461118f0c589efc0fe0489f69
 
 ALLOWED_HOSTS = ["*"]
 
 # FORM SUBMISSION
-<<<<<<< HEAD
 
 # Comment out the following line and place your railway URL, and your production URL in the array.
 CSRF_TRUSTED_ORIGINS = ["https://votacaoproz.up.railway.app"]
-=======
-# Comment out the following line and place your railway URL, and your production URL in the array.
-# CSRF_TRUSTED_ORIGINS = ["*"]
->>>>>>> 472e17593db4b5c461118f0c589efc0fe0489f69
 
 # Application definition
 
@@ -47,13 +38,10 @@ INSTALLED_APPS = [
     'allauth.account',
     'allauth.socialaccount',
     'allauth.socialaccount.providers.google',
-<<<<<<< HEAD
     'votacao_app',
     
 
 
-=======
->>>>>>> 472e17593db4b5c461118f0c589efc0fe0489f69
 ]
 
 SITE_ID = 1
@@ -67,10 +55,7 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'whitenoise.middleware.WhiteNoiseMiddleware',
-<<<<<<< HEAD
     
-=======
->>>>>>> 472e17593db4b5c461118f0c589efc0fe0489f69
 ]
 
 ROOT_URLCONF = 'mysite.urls'
@@ -91,14 +76,11 @@ TEMPLATES = [
     },
 ]
 
-<<<<<<< HEAD
 DBBACKUP_STORAGE = 'django.core.files.storage.FileSystemStorage' #o que salvar
 DBBACKUP_STORAGE_OPTIONS = {'location': 'backups/'} # onde salvar
 # pip install django-dbbackup
 #python manage.py dbbackup  
 
-=======
->>>>>>> 472e17593db4b5c461118f0c589efc0fe0489f69
 WSGI_APPLICATION = 'mysite.wsgi.application'
 
 
@@ -178,12 +160,8 @@ STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),)
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-<<<<<<< HEAD
-#EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
-=======
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
->>>>>>> 472e17593db4b5c461118f0c589efc0fe0489f69
+# EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
