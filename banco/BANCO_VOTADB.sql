@@ -1,0 +1,15 @@
+CREATE DATABASE VotaDB;
+
+CREATE TABLE grupo (
+    ID INT AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(255)
+);
+
+CREATE TABLE aluno (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(255),
+    email VARCHAR(255),
+    senha VARCHAR(255),
+    idgrupo INT,
+    FOREIGN KEY (idgrupo) REFERENCES grupo(ID)
+);
