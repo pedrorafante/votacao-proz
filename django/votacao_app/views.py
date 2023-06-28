@@ -34,11 +34,10 @@ def home(request):
         reponse = render(request, 'login.html', {'messages': None})
         reponse.set_cookie('email', email)
         return reponse
-    else :
+    else:
         reponse = render(request, 'login.html', {'messages': 'teste'})
         reponse.set_cookie('email', email)
         return reponse
-
 
 
 def verificar(request):
