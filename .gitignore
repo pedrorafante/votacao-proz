@@ -1,2 +1,4 @@
 django\mysite\__pycache__
 django\votacao_app\__pycache__
+django\__pycache__
+django\votacao_app\migrations\__pycache__
