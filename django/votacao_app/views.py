@@ -2,7 +2,7 @@ from django.shortcuts import render, HttpResponse
 from django.core.mail import send_mail
 from django.contrib.auth.decorators import login_required
 from django.contrib import messages
-from .models import Validacao, EmailConfirmacao
+from .models import Validacao
 from django.contrib.auth import authenticate, login
 import random
 
@@ -14,7 +14,7 @@ def home(request):
     email = request.POST.get('email')
     reponse = render(request, 'verificar_senha.html')
     reponse.set_cookie('email', email)
-    emails = EmailConfirmacao.objects.values_list('emails')
+    emails = Validacao.objects.values_list('email')
     x = []
     for mail in emails:
         x.append(mail[0])
@@ -30,8 +30,12 @@ def home(request):
         reponse.set_cookie('email', email)
         return reponse
 
+    elif email == None:
+        reponse = render(request, 'login.html', {'messages': None})
+        reponse.set_cookie('email', email)
+        return reponse
     else:
-        reponse = render(request, 'login.html', {'msg': 'teste'})
+        reponse = render(request, 'login.html', {'messages': 'teste'})
         reponse.set_cookie('email', email)
         return reponse
 
@@ -39,7 +43,7 @@ def home(request):
 def verificar(request):
     cookies = request.COOKIES
     email = cookies['email']
-    emails = EmailConfirmacao.objects.values_list('emails')
+    emails = Validacao.objects.values_list('email')
     x = []
     for mail in emails:
         x.append(mail[0])
