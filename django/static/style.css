@@ -193,10 +193,17 @@ label {
   overflow: hidden;
   transition: .5s;
   margin-top: 80px;
-  letter-spacing: 4px
+  letter-spacing: 4px;
+  width: 90px;
+  height: 20px;
+  right: 140px;
+  top: 13px;
+  z-index: -1;
 }
 
 .button-submit {
+  background: none;
+  border: none;
   position: relative;
   display: inline-block;
   padding: 10px 20px;
