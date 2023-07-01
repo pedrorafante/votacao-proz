@@ -82,7 +82,6 @@ def votacao(request):
     for i in grupos:
         grupos_tratados.append(i[0])
     voto = request.POST.get('grupo')
-    grupos_tratados.remove('teste')
     grupos_tratados.remove(aluno.grupo.nome_grupo)
     print(grupos_tratados,grupos,aluno.grupo.nome_grupo)
     if user.is_authenticated:
