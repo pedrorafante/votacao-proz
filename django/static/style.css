@@ -162,6 +162,25 @@ label {
   outline: none;
   background: transparent;
 }
+.votacao-grupo {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  /* margin-bottom: 30px; */
+  border: 5px;
+  border-bottom: 1px solid #f79400da;
+  outline: none;
+  background: transparent;
+  cursor:pointer;
+}
+.card{
+  margin: 5px;
+  padding: 3px;
+  border-radius: 5px;
+  box-shadow: #0000 #0000 #0000;
+  background-color: #cccccc28;
+}
 
 .login-box .user-box label {
   position: absolute;
@@ -180,6 +199,9 @@ label {
   left: 0;
   color: #c47601e5;
   font-size: 12px;
+}
+.teste{
+  height: 50px;
 }
 
 .login-box form a {
@@ -213,7 +235,7 @@ label {
   text-transform: uppercase;
   overflow: hidden;
   transition: .5s;
-  margin-top: 80px;
+  /* margin-top: 80px; */
   letter-spacing: 4px
 }
 

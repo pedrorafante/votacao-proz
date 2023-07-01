@@ -39,7 +39,7 @@
     <form method="POST" id="my_form" action="{% url 'home' %}">
       {% csrf_token %}
       <div class="user-box">
-        <input type="email" class="login-email" autocomplete="off" autofocus name="email" required>
+        <input type="email" class="login-email" autocomplete="on" autofocus name="email" required>
         <label>Email</label>
       </div>
       <div class="user-box">
