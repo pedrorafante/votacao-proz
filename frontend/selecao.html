@@ -4,5 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="selecao.css">
+    <script src="selecao.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100&family=Koulen&family=Oxanium:wght@300&family=Rammetto+One&family=Righteous&family=Unica+One&display=swap" rel="stylesheet">
     <title>Sistema de Votação</title>
 </head>
+<body>
+    
+    <h1>Selecione o grupo, no qual deseja votar!</h1>
+
+    <div class="options">
+        <button class="vote-btn" onclick="openPopup('Opção 1')">Opção 1</button>
+        <button class="vote-btn" onclick="openPopup('Opção 2')">Opção 2</button>
+        <button class="vote-btn" onclick="openPopup('Opção 3')">Opção 3</button>
+        <button class="vote-btn" onclick="openPopup('Opção 4')">Opção 4</button>
+    </div>
+    
+    <!-- Pop-up -->
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <span class="close-btn" onclick="closePopup()">&times;</span>
+            <h2>Votação</h2>
+            <p>Confirme sua votação:</p>
+            <div class="Confirmar">
+                <a href="#">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  Confirmar 
+                </a>
+            <button onclick="confirmVote()">Confirmar</button>
+        </div>
+    </div>
+</body>
