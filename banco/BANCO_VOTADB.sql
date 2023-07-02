@@ -13,3 +13,8 @@ CREATE TABLE aluno (
     idgrupo INT,
     FOREIGN KEY (idgrupo) REFERENCES grupo(ID)
 );
+INSERT INTO GRUPO (nome) VALUES
+('PATA7'),
+('SQUAD DA QUEBRADA'),
+('MANGO JOE'),
+('SONECA');
