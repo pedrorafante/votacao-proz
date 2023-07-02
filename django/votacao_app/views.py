@@ -90,7 +90,10 @@ def votacao(request):
                 if not Votacao.objects.filter(aluno=user.username).exists() :            
                     votacao =Votacao.objects.create(aluno = user.username,grupo = voto )
                     voto = False
-            
+                else:
+                    return render(request, 'confirmar-voto.html',{'user':user})
+            if Votacao.objects.filter(aluno=user.username).exists() :
+                return render(request, 'confirmar-voto.html',{'user':user})
             return render(request, 'tela_votacao.html',{'grupos':grupos_tratados})
         else:
             return redirect(verificar,{'messages': 'teste'})
