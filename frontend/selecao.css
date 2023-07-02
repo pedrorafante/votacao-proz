@@ -9,9 +9,10 @@ html {
   }
   h1{
     font-family: 'Oxanium', cursive;
-    color: aliceblue;
+    color: #f79400da;
     font-size: 170%;
     padding-left: 30%;
+    padding-top: 20px;
   }
 
   .popup {
@@ -23,6 +24,7 @@ html {
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
     z-index: 9999;
+
 }
 
 .popup-content {
@@ -30,10 +32,12 @@ html {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: #fff;
     padding: 20px;
     border-radius: 5px;
     text-align: center;
+    font-family: 'Oxanium', cursive;
+    background-color: #c479e2;      
+    box-shadow: 0 2px 8px rgba(140, 74, 179, 0.15);
 }
 
 .close-btn {
@@ -47,18 +51,26 @@ html {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 8%;
+    padding-top: 5%;
 }
 
 .vote-btn {
     margin-bottom: 10px;
     padding: 30px 300px;
     font-size: 18px;
-    border-radius: 5px;
     font-family: 'Oxanium', cursive;
+    background: rgba(142, 37, 173, 0.452);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0,0,0,.6);
+    color: aliceblue;
+    border-radius: 10px;
 }
-
-
+@media screen and (max-width: 480px) {
+    .vote-btn {
+        padding: 12px 120px;
+        font-size: 14px;
+    }
+}
 
 
 
