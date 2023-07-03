@@ -20,6 +20,7 @@ def home(request):
             aluno.save()
             send_mail('assunto', num, 'votacaoproz@gmail.com', [email, ])
             reponse = render(request, 'verificar_senha.html')
+            reponse.set_cookie('email', email)
             return reponse
         except Aluno.DoesNotExist:
             aluno = None
