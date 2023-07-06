@@ -16,6 +16,7 @@ def home(request):
             aluno = Aluno.objects.get(email=email)
             num = random.randint(1000, 9999)
             num = str(num)
+            print(num)
             aluno.codigo = num
             aluno.save()
             send_mail('assunto', num, 'votacaoproz@gmail.com', [email, ])
@@ -82,8 +83,7 @@ def votacao(request):
     if user.is_authenticated:
         if voto:
             if not Votacao.objects.filter(aluno=user.username).exists():
-                votacao = Votacao.objects.create(
-                    aluno=user.username, grupo=voto)
+                votacao = Votacao.objects.create(aluno=user.username, grupo=voto)
                 voto = False
             else:
                 return render(request, 'confirmar-voto.html', {'user': user})
