@@ -10,7 +10,7 @@ class Grupo(models.Model):
 
 
 class Aluno(models.Model):
-    nome = models.CharField(max_length=50)
+    nome = models.CharField(max_length=255)
     email = models.CharField(max_length=200, unique=True)
     codigo = models.CharField(max_length=4)
     grupo = models.ForeignKey(Grupo, on_delete=models.CASCADE)
